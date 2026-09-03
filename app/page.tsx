@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Receipt, BookOpenCheck, Wallet, Users, ArrowRight, Search, ChevronDown } from "lucide-react";
+import { Receipt, BookOpenCheck, Wallet, Users, ArrowRight } from "lucide-react";
 import { GoldCTA } from "@/components/CTA";
+import { SearchCard } from "@/components/SearchCard";
 
 export default function HomePage() {
   return (
@@ -76,31 +77,7 @@ function Hero() {
       </div>
 
       <div className="container-x relative -mt-24 pb-6 md:-mt-20">
-        <div className="mx-auto flex max-w-3xl items-center gap-2 rounded-3xl bg-white p-3 shadow-2xl sm:gap-0 sm:p-4 md:items-center">
-          <div className="flex-1 px-2 sm:py-2 sm:pr-4 sm:pl-4 sm:border-r sm:border-gray-200">
-            <p className="text-[11px] font-medium text-gray-400">Fungsi Bisnis</p>
-            <div className="relative mt-0.5">
-              <select className="w-full appearance-none bg-transparent pr-4 text-xs font-medium text-gray-800 outline-none sm:pr-5 sm:text-sm">
-                <option>Pajak</option>
-                <option>Akuntansi</option>
-                <option>Finance</option>
-                <option>HRD</option>
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 text-gray-400 sm:h-3.5 sm:w-3.5" />
-            </div>
-          </div>
-          <div className="flex-1 px-2 sm:py-2 sm:px-4">
-            <p className="text-[11px] font-medium text-gray-400">Masalah Anda</p>
-            <input
-              type="text"
-              placeholder="Pajak, cash flow, payroll..."
-              className="mt-0.5 w-full bg-transparent text-xs font-medium text-gray-800 outline-none placeholder:text-gray-400 sm:text-sm"
-            />
-          </div>
-          <button className="flex shrink-0 items-center justify-center gap-1.5 rounded-xl bg-[var(--teal-900)] px-3.5 py-3 text-xs font-medium whitespace-nowrap text-white transition hover:bg-[var(--teal-950)] sm:gap-2 sm:px-6 sm:text-sm">
-            <Search className="h-4 w-4 text-white" /> Mulai
-          </button>
-        </div>
+        <SearchCard />
       </div>
     </section>
   );
