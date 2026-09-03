@@ -211,7 +211,8 @@ export default function KontakPage() {
               <div>
                 <h3 className="font-bold text-gray-900">Alamat</h3>
                 <p className="mt-1 text-gray-600">
-                  Indonesia (konsultasi online dan on-site tersedia)
+                  Jalan Nusantara Raya, Goldencity Kelurahan Teluk Pucung,
+                  Kecamatan Bekasi Utara, Kota Bekasi Jawa Barat 17121
                 </p>
               </div>
             </div>

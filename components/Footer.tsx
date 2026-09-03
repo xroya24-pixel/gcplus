@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-white/70">
               <li>WhatsApp +62 852-8662-4831</li>
               <li>ganjar.consulting@gmail.com</li>
-              <li>Indonesia (online &amp; on-site)</li>
+              <li>Bekasi Utara, Kota Bekasi, Jawa Barat</li>
             </ul>
           </div>
         </div>
