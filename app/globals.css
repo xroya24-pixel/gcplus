@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --teal-950: #04255f;
+  --teal-900: #06306e;
+  --teal-800: #0f4a93;
+  --teal-accent: #1050a0;
+  --yellow: #feb300;
+  --bg-soft: #f0f5fb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+  --font-script: var(--font-script);
+  --color-navy: var(--teal-950);
+  --color-navy-light: var(--teal-900);
+  --color-navy-mid: var(--teal-800);
+  --color-gold: var(--yellow);
+  --color-gold-dark: var(--teal-accent);
+  --color-gold-bright: var(--yellow);
+  --color-soft: var(--bg-soft);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.container-x {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-color 0.35s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(4, 37, 95, 0.18),
+    0 8px 16px -8px rgba(4, 37, 95, 0.1);
+  border-color: rgba(16, 80, 160, 0.3);
+}
+
+.card-hover-light {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-color 0.35s ease;
+}
+
+.card-hover-light:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(255, 255, 255, 0.12),
+    0 8px 16px -4px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-glow {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 24px -4px rgba(254, 179, 0, 0.25),
+    0 12px 24px -8px rgba(4, 37, 95, 0.15);
+}
